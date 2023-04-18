@@ -1,0 +1,9 @@
+---
+- name: Install httpd 
+  hosts: localhost
+  gather_facts: no
+  tasks:
+   - name: Install the HTTPD package
+     ansible.builtin.yum:
+      name: httpd
+      state: present
